@@ -34,7 +34,7 @@ signs:
       - --yes
 release:
   github:
-    owner: arsiba
+    owner: SoeldnerConsult
     name: tofulint
 snapshot:
   name_template: "{{ .Tag }}-dev"

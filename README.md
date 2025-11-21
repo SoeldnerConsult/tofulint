@@ -1,9 +1,9 @@
 # TofuLint
-[![Build Status](https://github.com/arsiba/tofulint/workflows/build/badge.svg?branch=master)](https://github.com/arsiba/tofulint/actions)
-[![GitHub release](https://img.shields.io/github/release/arsiba/tofulint.svg)](https://github.com/arsiba/tofulint/releases/latest)
+[![Build Status](https://github.com/SoeldnerConsult/tofulint/workflows/build/badge.svg?branch=master)](https://github.com/SoeldnerConsult/tofulint/actions)
+[![GitHub release](https://img.shields.io/github/release/SoeldnerConsult/tofulint.svg)](https://github.com/SoeldnerConsult/tofulint/releases/latest)
 [![Opentofu Compatibility](https://img.shields.io/badge/opentofu-%3E%3D%201.0-blue)](docs/user-guide/compatibility.md)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-blue.svg)](LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/arsiba/tofulint)](https://goreportcard.com/report/github.com/arsiba/tofulint)
+[![Go Report Card](https://goreportcard.com/badge/github.com/SoeldnerConsult/tofulint)](https://goreportcard.com/report/github.com/SoeldnerConsult/tofulint)
 [![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/tflint.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/tflint)
 
 A **pluggable** [OpenTofu](https://opentofu.org/) linter inspired by TFLint.
@@ -26,7 +26,7 @@ Currently, only one installation method is available:
 
 ### Bash (Linux)
 ```bash
-curl -s https://raw.githubusercontent.com/arsiba/tofulint/master/install_linux.sh | bash
+curl -s https://raw.githubusercontent.com/SoeldnerConsult/tofulint/master/install_linux.sh | bash
 ````
 
 ### Verification
@@ -36,7 +36,7 @@ At this stage, no releases are verified or signed.
 A Docker-based installation will be available in a future release.
 
 ## Getting Started
-TofuLint comes bundled with a [Terraform language ruleset](https://github.com/arsiba/tofulint-ruleset-opentofu), enabling recommended rules by default.
+TofuLint comes bundled with a [Terraform language ruleset](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu), enabling recommended rules by default.
 
 ### Enabling the Opentofu Plugin
 Declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl`:
@@ -45,19 +45,19 @@ Declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl`:
 plugin "opentofu" {
   enabled = true
   version = "0.0.7"
-  source = "github.com/arsiba/tofulint-ruleset-opentofu"
+  source = "github.com/SoeldnerConsult/tofulint-ruleset-opentofu"
 }
 ```
 > Even though tofulint currently comes with the opentofu plugin pre-packaged, it is still necessary to enable th plugin manually with the given plugin source. This is due to a bug in tofulint source code.
 
-More details: [TFLint Terraform Ruleset Configuration](https://github.com/arsiba/tofulint-ruleset-opentofu/blob/main/docs/configuration.md)
+More details: [TFLint Terraform Ruleset Configuration](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu/blob/main/docs/configuration.md)
 
 ### Cloud Provider Plugins
 
 If you use a cloud provider, install the corresponding plugin:
 
-* [AWS](https://github.com/arsiba/tofulint-ruleset-aws)
-* [GCP](https://github.com/arsiba/tofulint-ruleset-google)
+* [AWS](https://github.com/SoeldnerConsult/tofulint-ruleset-aws)
+* [GCP](https://github.com/SoeldnerConsult/tofulint-ruleset-google)
 
 Other plugins can be added via `.tflint.hcl` and installed with:
 
@@ -66,7 +66,7 @@ tofulint --init
 ```
 
 ### Write your own plugins
-To write your own plugins the syntax and workflow is the same as in `tflint`. This also enables to modify existing `tflint` plugins to work with tofulint. Therefor fork the wanted plugin, enable all github-actions via th github web interface, and replace all `terraform-linters/tflint-plugin-sdk` with `arsiba/tofulint-plugin-sdk`. Also replace all `terraform-linters/tofulint-plugin-<pluginName>` occurances with the new repository where the plugin is located now, as well as the version in `project/main.go`. 
+To write your own plugins the syntax and workflow is the same as in `tflint`. This also enables to modify existing `tflint` plugins to work with tofulint. Therefor fork the wanted plugin, enable all github-actions via th github web interface, and replace all `terraform-linters/tflint-plugin-sdk` with `SoeldnerConsult/tofulint-plugin-sdk`. Also replace all `terraform-linters/tofulint-plugin-<pluginName>` occurances with the new repository where the plugin is located now, as well as the version in `project/main.go`. 
 Commit and push the changes, create a new tag or empty release with the Syntax `vX.X.X` (best wopuld be to use the same Version as above) and the rest will be handled by the corresponsing actions.
 
 Use the plugin by including the following in your `.tofulint.hcl` / `.tflint.hcl` file:

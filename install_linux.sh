@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="arsiba/tofulint"
+REPO="SoeldnerConsult/tofulint"
 
 echo "===================================================="
 echo "Fetching release version ..."

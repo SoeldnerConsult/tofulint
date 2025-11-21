@@ -15,7 +15,7 @@ The host (client) to the plugin (server) requests to:
 - Apply plugin configs
 - Request to run inspections
 
-The plugin system is implemented by [TofuLint plugin SDK](https://github.com/arsiba/tofulint-plugin-sdk). If you want to know more about `*.proto` and detailed gRPC server/client implementation, check out the SDK.
+The plugin system is implemented by [TofuLint plugin SDK](https://github.com/SoeldnerConsult/tofulint-plugin-sdk). If you want to know more about `*.proto` and detailed gRPC server/client implementation, check out the SDK.
 
 ## Inspection Flow Diagram
 
@@ -49,7 +49,7 @@ flowchart TB
 
 ### CLI (`cmd` package)
 
-[The `cmd` package](https://github.com/arsiba/tofulint/tree/master/cmd) is the entrypoint of the CLI. `cmd.CLI` has streams to stdout/stderr and prints a result to the screen.
+[The `cmd` package](https://github.com/SoeldnerConsult/tofulint/tree/master/cmd) is the entrypoint of the CLI. `cmd.CLI` has streams to stdout/stderr and prints a result to the screen.
 
 Depending on the user's instructions, it does the following:
 
@@ -63,19 +63,19 @@ This package is responsible for parsing CLI flags and arguments. The parsed `cmd
 
 ### Load TofuLint config (`tflint.LoadConfig`)
 
-[The `tflint` package](https://github.com/arsiba/tofulint/tree/master/tflint) provides many features related to TofuLint, such as loading a config file (`.tflint.hcl` / `.tofulint.hcl`) and parsing annotations (`# tflint-ignore` comments).
+[The `tflint` package](https://github.com/SoeldnerConsult/tofulint/tree/master/tflint) provides many features related to TofuLint, such as loading a config file (`.tflint.hcl` / `.tofulint.hcl`) and parsing annotations (`# tflint-ignore` comments).
 
 The `tflint.LoadConfig` loads a config file and returns `tflint.Config`. This config will be used in later steps.
 
 ### Load Opentofu config (`opentofu.LoadConfig`)
 
-[The `opentofu` package](https://github.com/arsiba/tofulint/tree/master/opentofu) is a fork of [https://github.com/opentofu/opentofu/internal](https://github.com/opentofu/opentofu/internal). This package is responsible for processing the Opentofu and Terraform semantics, such as parsing `*.tf` / `*.tofu` files, evaluating expressions, and loading modules.
+[The `opentofu` package](https://github.com/SoeldnerConsult/tofulint/tree/master/opentofu) is a fork of [https://github.com/opentofu/opentofu/internal](https://github.com/opentofu/opentofu/internal). This package is responsible for processing the Opentofu and Terraform semantics, such as parsing `*.tf` / `*.tofu` files, evaluating expressions, and loading modules.
 
 The `opentofu.LoadConfig` reads `*.tf` / `*.tofu` files as a `opentofu.Config` in the given directory. These structures are designed to be as similar to Opentofu / Terraform core. See "The Design of `opentofu` Package" section below for details.
 
 ### Discover plugins (`plugin.Discovery`)
 
-[The `plugin` package](https://github.com/arsiba/tofulint/tree/master/plugin) is responsible for the plugin system. This package contains gRPC server implementation, installation, discovery, etc.
+[The `plugin` package](https://github.com/SoeldnerConsult/tofulint/tree/master/plugin) is responsible for the plugin system. This package contains gRPC server implementation, installation, discovery, etc.
 
 The `plugin.Discovery` discovers installed plugins and launches plugin binaries as subprocesses. This detailed implementation is hidden by [github.com/hashicorp/go-plugin](https://github.com/hashicorp/go-plugin).
 
@@ -105,7 +105,7 @@ The Runner server saves issues emitted by plugins (imagine `runner.EmitIssue`). 
 
 ### Print issues (`formatter.Print`)
 
-[The `formatter` package](https://github.com/arsiba/tofulint/tree/master/formatter)  processes and outputs issues in formats such as default, JSON, and SARIF.
+[The `formatter` package](https://github.com/SoeldnerConsult/tofulint/tree/master/formatter)  processes and outputs issues in formats such as default, JSON, and SARIF.
 
 ## Inspection Sequence Diagram
 

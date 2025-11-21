@@ -30,7 +30,7 @@ config {
 plugin "aws" {
   enabled = true
   version = "0.4.0"
-  source  = "github.com/arsiba/tofulint-ruleset-aws"
+  source  = "github.com/SoeldnerConsult/tofulint-ruleset-aws"
 }
 
 rule "aws_instance_invalid_type" {
