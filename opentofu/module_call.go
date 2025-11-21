@@ -8,10 +8,10 @@ package opentofu
 import (
 	"fmt"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/gohcl"
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
 )
 
 // ModuleCall represents a "module" block in a module or file.

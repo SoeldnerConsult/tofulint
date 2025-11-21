@@ -3,11 +3,11 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/arsiba/tofulint-plugin-sdk/plugin"
-	"github.com/arsiba/tofulint-plugin-sdk/tflint"
-	"github.com/arsiba/tofulint-ruleset-opentofu/project"
-	"github.com/arsiba/tofulint-ruleset-opentofu/rules"
-	"github.com/arsiba/tofulint-ruleset-opentofu/terraform"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/project"
+	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/rules"
+	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/terraform"
 )
 
 func (cli *CLI) actAsBundledPlugin() int {

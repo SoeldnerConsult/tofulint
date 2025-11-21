@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/arsiba/tofulint/formatter"
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/formatter"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/fatih/color"
 	"github.com/hashicorp/logutils"
 	flags "github.com/jessevdk/go-flags"

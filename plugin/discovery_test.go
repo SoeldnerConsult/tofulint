@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 )
 
 func Test_Discovery(t *testing.T) {
@@ -300,7 +300,7 @@ func Test_Discovery_bundledPluginWithVersion(t *testing.T) {
 			"opentofu": {
 				Name:    "opentofu",
 				Enabled: true,
-				Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+				Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 				Version: "0.0.7",
 			},
 		},

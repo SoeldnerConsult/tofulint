@@ -5,11 +5,11 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/opentofu/addrs"
-	"github.com/arsiba/tofulint/opentofu/lang"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang"
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
 	"github.com/zclconf/go-cty/cty"
 )
 

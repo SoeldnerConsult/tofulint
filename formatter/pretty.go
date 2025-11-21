@@ -7,11 +7,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
+	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 	"github.com/fatih/color"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclparse"
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
 )
 
 var colorBold = color.New(color.Bold).SprintfFunc()

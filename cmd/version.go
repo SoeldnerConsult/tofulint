@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/arsiba/tofulint/plugin"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/plugin"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/spf13/afero"
 )
 

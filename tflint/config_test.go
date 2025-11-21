@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
-	"github.com/arsiba/tofulint/opentofu"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
+	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	hcl "github.com/hashicorp/hcl/v2"
@@ -121,7 +121,7 @@ plugin "baz" {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},
@@ -162,7 +162,7 @@ config {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},
@@ -193,7 +193,7 @@ config {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},
@@ -377,7 +377,7 @@ plugin "foo" {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},
@@ -416,7 +416,7 @@ config {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},
@@ -446,7 +446,7 @@ config {
 						Name:    "opentofu",
 						Enabled: true,
 						Version: "0.0.7",
-						Source:  "github.com/arsiba/tofulint-ruleset-opentofu",
+						Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
 					},
 				},
 			},

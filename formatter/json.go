@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
+	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 	"github.com/hashicorp/hcl/v2"
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
 )
 
 // JSONIssue is a temporary structure for converting TofuLint issues to JSON.

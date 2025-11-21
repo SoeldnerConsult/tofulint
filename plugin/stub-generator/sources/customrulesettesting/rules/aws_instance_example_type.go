@@ -3,9 +3,9 @@ package rules
 import (
 	"fmt"
 
-	"github.com/arsiba/tofulint/plugin/stub-generator/sources/customrulesettesting/custom"
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
-	"github.com/arsiba/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint/plugin/stub-generator/sources/customrulesettesting/custom"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 )
 
 // AwsInstanceExampleTypeRule checks whether ...

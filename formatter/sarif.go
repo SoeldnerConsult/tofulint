@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
-	"github.com/arsiba/tofulint/tflint"
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/owenrumney/go-sarif/sarif"
 )
@@ -17,7 +17,7 @@ func (f *Formatter) sarifPrint(issues tflint.Issues, appErr error) {
 		panic(initErr)
 	}
 
-	run := sarif.NewRun("tofulint", "https://github.com/arsiba/tofulint")
+	run := sarif.NewRun("tofulint", "https://github.com/SoeldnerConsulterConsult/tofulint")
 
 	version := tflint.Version.String()
 	run.Tool.Driver.Version = &version
@@ -64,7 +64,7 @@ func (f *Formatter) sarifPrint(issues tflint.Issues, appErr error) {
 		}
 	}
 
-	errRun := sarif.NewRun("tflint-errors", "https://github.com/arsiba/tofulint")
+	errRun := sarif.NewRun("tflint-errors", "https://github.com/SoeldnerConsulterConsult/tofulint")
 	errRun.Tool.Driver.Version = &version
 
 	report.AddRun(errRun)

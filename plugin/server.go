@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/plugin/plugin2host"
+	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/hashicorp/go-version"
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
-	"github.com/arsiba/tofulint-plugin-sdk/plugin/plugin2host"
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
 	"github.com/zclconf/go-cty/cty"
 )
 

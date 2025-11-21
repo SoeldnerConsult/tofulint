@@ -7,13 +7,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/plugin"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsulterConsult/tofulint/plugin"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/spf13/afero"
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

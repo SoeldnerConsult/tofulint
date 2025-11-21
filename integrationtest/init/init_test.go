@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/arsiba/tofulint/cmd"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/cmd"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 )
 
 func TestIntegration(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 )
 
 // Options is an option specified by arguments.

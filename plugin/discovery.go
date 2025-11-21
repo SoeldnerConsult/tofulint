@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/arsiba/tofulint-plugin-sdk/plugin/host2plugin"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin/host2plugin"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	plugin "github.com/hashicorp/go-plugin"
 	"github.com/mitchellh/go-homedir"
 )

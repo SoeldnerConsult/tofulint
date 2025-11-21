@@ -10,9 +10,9 @@ import (
 	"github.com/zclconf/go-cty/cty/function"
 	"github.com/zclconf/go-cty/cty/function/stdlib"
 
-	"github.com/arsiba/tofulint/opentofu/collections"
-	"github.com/arsiba/tofulint/opentofu/lang/funcs"
-	"github.com/arsiba/tofulint/opentofu/lang/funcs/terraform"
+	"github.com/SoeldnerConsult/tofulint/opentofu/collections"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang/funcs"
+	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang/funcs/terraform"
 )
 
 var impureFunctions = []string{

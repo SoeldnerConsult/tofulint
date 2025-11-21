@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/arsiba/tofulint/plugin/stub-generator/sources/customrulesettesting/custom"
-	"github.com/arsiba/tofulint/plugin/stub-generator/sources/customrulesettesting/rules"
-	"github.com/arsiba/tofulint-plugin-sdk/plugin"
-	"github.com/arsiba/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint/plugin/stub-generator/sources/customrulesettesting/custom"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/plugin"
+	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsulterConsult/tofulint/plugin/stub-generator/sources/customrulesettesting/rules"
 )
 
 func main() {

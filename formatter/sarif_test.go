@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/google/go-cmp/cmp"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/xeipuuv/gojsonschema"
@@ -32,7 +32,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -42,7 +42,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -72,7 +72,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint",
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint",
           "rules": [
             {
               "id": "test_rule",
@@ -114,7 +114,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -144,7 +144,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint",
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint",
           "rules": [
             {
               "id": "test_rule",
@@ -186,7 +186,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -216,7 +216,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint",
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint",
           "rules": [
             {
               "id": "test_rule",
@@ -258,7 +258,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -288,7 +288,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint",
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint",
           "rules": [
             {
               "id": "test_rule",
@@ -330,7 +330,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -359,7 +359,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint",
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint",
           "rules": [
             {
               "id": "test_rule",
@@ -395,7 +395,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": [
@@ -437,7 +437,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tofulint",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": []
@@ -447,7 +447,7 @@ func Test_sarifPrint(t *testing.T) {
         "driver": {
           "name": "tflint-errors",
           "version": "%s",
-          "informationUri": "https://github.com/arsiba/tofulint"
+          "informationUri": "https://github.com/SoeldnerConsulterConsult/tofulint"
         }
       },
       "results": [

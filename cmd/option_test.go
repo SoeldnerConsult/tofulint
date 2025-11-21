@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/arsiba/tofulint/opentofu"
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	flags "github.com/jessevdk/go-flags"
