@@ -8,8 +8,8 @@ package opentofu
 import (
 	"fmt"
 
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
 	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/gohcl"
 )

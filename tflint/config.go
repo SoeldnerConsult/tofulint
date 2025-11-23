@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
-	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu"
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclparse"
@@ -420,7 +420,7 @@ func (c *Config) enableBundledPlugin() *Config {
 			Name:    "opentofu",
 			Enabled: true,
 			Version: "0.0.7",
-			Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
+			Source:  "github.com/SoeldnerConsult/tofulint-ruleset-opentofu",
 			Body:    f.Body,
 		}
 
@@ -527,7 +527,7 @@ func (c *PluginConfig) Content(schema *hclext.BodySchema) (*hclext.BodyContent, 
 }
 
 // RuleSet is an interface to handle plugin's RuleSet.
-// The real impl is github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/plugin/host2plugin.GRPCClient.
+// The real impl is github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin/host2plugin.GRPCClient.
 type RuleSet interface {
 	RuleSetName() (string, error)
 	RuleSetVersion() (string, error)

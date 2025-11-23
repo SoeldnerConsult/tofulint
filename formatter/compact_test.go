@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclparse"
 )

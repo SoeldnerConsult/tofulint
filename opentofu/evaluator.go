@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/terraform/lang/marks"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/addrs"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/lang"
 	"github.com/agext/levenshtein"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"

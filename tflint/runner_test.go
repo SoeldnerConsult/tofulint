@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 	"github.com/SoeldnerConsult/tofulint/opentofu"
-	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	hcl "github.com/hashicorp/hcl/v2"

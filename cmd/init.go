@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/SoeldnerConsult/tofulint/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/fatih/color"
 	"github.com/spf13/afero"
 )

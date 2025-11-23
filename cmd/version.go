@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/SoeldnerConsult/tofulint/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/spf13/afero"
 )
 

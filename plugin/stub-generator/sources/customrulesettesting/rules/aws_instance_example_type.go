@@ -3,9 +3,9 @@ package rules
 import (
 	"fmt"
 
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 	"github.com/SoeldnerConsult/tofulint/plugin/stub-generator/sources/customrulesettesting/custom"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 )
 
 // AwsInstanceExampleTypeRule checks whether ...

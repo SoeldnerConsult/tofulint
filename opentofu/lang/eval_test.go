@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/arsiba/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 

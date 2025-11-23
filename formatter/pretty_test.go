@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/fatih/color"
 	hcl "github.com/hashicorp/hcl/v2"
 )

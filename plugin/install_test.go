@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 )
 
 func Test_Install(t *testing.T) {

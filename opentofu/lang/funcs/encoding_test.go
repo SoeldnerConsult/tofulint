@@ -11,7 +11,7 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/arsiba/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
 )
 
 func TestBase64Decode(t *testing.T) {

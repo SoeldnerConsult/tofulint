@@ -1,8 +1,8 @@
 package formatter
 
 import (
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 	"github.com/SoeldnerConsult/tofulint/tflint"
-	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 )
 
 type testRule struct{}

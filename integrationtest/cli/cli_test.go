@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/SoeldnerConsult/tofulint/cmd"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/fatih/color"
 )
 

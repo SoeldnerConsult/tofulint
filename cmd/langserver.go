@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/arsiba/tofulint/langserver"
+	"github.com/SoeldnerConsult/tofulint/langserver"
 	"github.com/sourcegraph/jsonrpc2"
 )
 

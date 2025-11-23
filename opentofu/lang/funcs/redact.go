@@ -8,7 +8,7 @@ package funcs
 import (
 	"fmt"
 
-	"github.com/arsiba/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 

@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
 	"github.com/SoeldnerConsult/tofulint/opentofu"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/plugin"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/spf13/afero"

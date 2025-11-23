@@ -15,7 +15,7 @@ import (
 	"github.com/zclconf/go-cty/cty/convert"
 	"github.com/zclconf/go-cty/cty/function"
 
-	"github.com/arsiba/tofulint/opentofu/collections"
+	"github.com/SoeldnerConsult/tofulint/opentofu/collections"
 )
 
 // StartsWithFunc constructs a function that checks if a string starts with

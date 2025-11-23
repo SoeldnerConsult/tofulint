@@ -8,7 +8,7 @@ package lang
 import (
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 )
 
 // References finds all of the references in the given set of traversals,

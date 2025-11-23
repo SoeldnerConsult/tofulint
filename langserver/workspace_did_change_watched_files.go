@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	lsp "github.com/sourcegraph/go-lsp"
 	"github.com/sourcegraph/jsonrpc2"
 	"github.com/spf13/afero"

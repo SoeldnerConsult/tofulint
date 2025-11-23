@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/spf13/afero"

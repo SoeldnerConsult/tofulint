@@ -1,7 +1,7 @@
 package plugin
 
 import (
-	"github.com/arsiba/tofulint-plugin-sdk/plugin/host2plugin"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin/host2plugin"
 	plugin "github.com/hashicorp/go-plugin"
 	"github.com/hashicorp/go-version"
 )

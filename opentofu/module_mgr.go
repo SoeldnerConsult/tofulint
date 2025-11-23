@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 	"github.com/hashicorp/go-version"
 	"github.com/spf13/afero"
 )

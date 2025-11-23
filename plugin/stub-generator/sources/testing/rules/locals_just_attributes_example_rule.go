@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 )
 
 // LocalsJustAttributesExampleRule checks whether ...

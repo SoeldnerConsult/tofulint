@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/SoeldnerConsult/tofulint/formatter"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/fatih/color"
 	"github.com/hashicorp/logutils"
 	flags "github.com/jessevdk/go-flags"

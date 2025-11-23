@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 )
 
 // Data is an interface whose implementations can provide cty.Value

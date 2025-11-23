@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 	"github.com/SoeldnerConsult/tofulint/plugin/stub-generator/sources/testing/rules"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/SoeldnerConsult/tofulint/opentofu"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 )
 
 // Options is an option specified by arguments.

@@ -17,7 +17,7 @@ import (
 	"github.com/zclconf/go-cty/cty/function/stdlib"
 	"github.com/zclconf/go-cty/cty/gocty"
 
-	"github.com/arsiba/tofulint/opentofu/tfdiags"
+	"github.com/SoeldnerConsult/tofulint/opentofu/tfdiags"
 )
 
 var LengthFunc = function.New(&function.Spec{

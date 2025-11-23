@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/arsiba/tofulint/opentofu"
+	"github.com/SoeldnerConsult/tofulint/opentofu"
 	"github.com/spf13/afero"
 )
 

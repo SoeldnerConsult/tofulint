@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
-	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/project"
-	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/rules"
-	"github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu/terraform"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint-ruleset-opentofu/project"
+	"github.com/SoeldnerConsult/tofulint-ruleset-opentofu/rules"
+	"github.com/SoeldnerConsult/tofulint-ruleset-opentofu/terraform"
 )
 
 func (cli *CLI) actAsBundledPlugin() int {

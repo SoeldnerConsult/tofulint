@@ -5,11 +5,10 @@ go 1.24.6
 toolchain go1.24.7
 
 require (
+	github.com/SoeldnerConsult/tofulint-plugin-sdk v0.0.3
+	github.com/SoeldnerConsult/tofulint-ruleset-opentofu v0.0.8
 	github.com/agext/levenshtein v1.2.3
 	github.com/apparentlymart/go-cidr v1.1.0
-	github.com/SoeldnerConsult/tofulint v0.0.3
-	github.com/SoeldnerConsult/tofulint-plugin-sdk v0.0.3
-	github.com/SoeldnerConsult/tofulint-ruleset-opentofu v0.0.7
 	github.com/fatih/color v1.18.0
 	github.com/go-test/deep v1.1.1
 	github.com/google/go-cmp v0.7.0

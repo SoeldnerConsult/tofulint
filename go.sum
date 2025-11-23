@@ -32,6 +32,10 @@ github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1
 github.com/Masterminds/semver/v3 v3.4.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
 github.com/ProtonMail/go-crypto v1.3.0 h1:ILq8+Sf5If5DCpHQp4PbZdS1J7HDFRXz/+xKBiRGFrw=
 github.com/ProtonMail/go-crypto v1.3.0/go.mod h1:9whxjD8Rbs29b4XWbB8irEcE8KHMqaR2e7GWU1R+/PE=
+github.com/SoeldnerConsult/tofulint-plugin-sdk v0.0.3 h1:ZHfCOtqk3k+wYi7VA7Is6qYn35qYQi2KI1VvqVZTni8=
+github.com/SoeldnerConsult/tofulint-plugin-sdk v0.0.3/go.mod h1:CDznCpEWa3DUxFOFE8uCzDtDkuPd+m+9q67Zyq5u02o=
+github.com/SoeldnerConsult/tofulint-ruleset-opentofu v0.0.8 h1:Pp5Oi1xEPePew+oBTeXyrOEnAukYNswJ/d1aqlL6etE=
+github.com/SoeldnerConsult/tofulint-ruleset-opentofu v0.0.8/go.mod h1:CSD+PPa/ofIeM8tsdmzDXYTjnSyYXHDtYBmFJDPSL38=
 github.com/agext/levenshtein v1.2.3 h1:YB2fHEn0UJagG8T1rrWknE3ZQzWM06O8AMAatNn7lmo=
 github.com/agext/levenshtein v1.2.3/go.mod h1:JEDfjyjHDjOF/1e4FlBE/PkbqA9OfWu2ki2W0IB5558=
 github.com/apparentlymart/go-cidr v1.1.0 h1:2mAhrMoF+nhXqxTzSZMUzDHkLjmIHC+Zzn4tdgBZjnU=
@@ -39,12 +43,6 @@ github.com/apparentlymart/go-cidr v1.1.0/go.mod h1:EBcsNrHc3zQeuaeCeCtQruQm+n9/Y
 github.com/apparentlymart/go-textseg/v13 v13.0.0/go.mod h1:ZK2fH7c4NqDTLtiYLvIkEghdlcqw7yxLeM89kiTRPUo=
 github.com/apparentlymart/go-textseg/v15 v15.0.0 h1:uYvfpb3DyLSCGWnctWKGj857c6ew1u1fNQOlOtuGxQY=
 github.com/apparentlymart/go-textseg/v15 v15.0.0/go.mod h1:K8XmNZdhEBkdlyDdvbmmsvpAG721bKi0joRfFdHIWJ4=
-github.com/arsiba/tofulint v0.0.3 h1:AYDykUrUuHdRWWGQNyqURZLO/EE2Rw2EB/7VvYuc5wA=
-github.com/arsiba/tofulint v0.0.3/go.mod h1:ihfHBJC73mJvVIShbNr4+j8cnBJqPLPEqifYxJKw/U4=
-github.com/arsiba/tofulint-plugin-sdk v0.0.2 h1:gr5hArqAYuyZNuKhE3uKKZ4wS2e2rvLLEj+Gr5BKjW8=
-github.com/arsiba/tofulint-plugin-sdk v0.0.2/go.mod h1:kcJPp/tr/y0Pl/MxBb9rByicX0VlRNpjeT4rCtt30fE=
-github.com/arsiba/tofulint-ruleset-opentofu v0.0.7 h1:222M9y9pZnwnCjBnRCvMsYtcNUE1GFiSHi/YIRV3JvM=
-github.com/arsiba/tofulint-ruleset-opentofu v0.0.7/go.mod h1:pLgm/jKZrSTcAg6S1J8//JP4KnFJxV8mQBAIL5d/15U=
 github.com/aws/aws-sdk-go-v2 v1.39.2 h1:EJLg8IdbzgeD7xgvZ+I8M1e0fL0ptn/M47lianzth0I=
 github.com/aws/aws-sdk-go-v2 v1.39.2/go.mod h1:sDioUELIUO9Znk23YVmIk86/9DOpkbyyVb1i/gUNFXY=
 github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.7.1 h1:i8p8P4diljCr60PpJp6qZXNlgX4m2yQFpYk+9ZT+J4E=

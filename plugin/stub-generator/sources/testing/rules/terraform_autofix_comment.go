@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/arsiba/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 )
 
 // TerraformAutofixComment checks whether ...

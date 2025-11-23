@@ -19,7 +19,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"
 
-	"github.com/arsiba/tofulint/opentofu/collections"
+	"github.com/SoeldnerConsult/tofulint/opentofu/collections"
 )
 
 // MakeFileFunc constructs a function that takes a file path and returns the

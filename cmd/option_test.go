@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/SoeldnerConsult/tofulint/opentofu"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	flags "github.com/jessevdk/go-flags"

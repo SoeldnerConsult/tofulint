@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 )
 
 func main() {

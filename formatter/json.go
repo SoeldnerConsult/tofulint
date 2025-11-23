@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 	"github.com/SoeldnerConsult/tofulint/tflint"
-	sdk "github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/tflint"
 	"github.com/hashicorp/hcl/v2"
 )
 

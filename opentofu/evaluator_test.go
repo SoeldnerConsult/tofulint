@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
-	"github.com/SoeldnerConsulterConsult/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/hashicorp/go-version"

@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/arsiba/tofulint/cmd"
+	"github.com/SoeldnerConsult/tofulint/cmd"
 	colorable "github.com/mattn/go-colorable"
 )
 

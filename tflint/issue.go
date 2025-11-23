@@ -5,7 +5,7 @@ import (
 	"sort"
 
 	hcl "github.com/hashicorp/hcl/v2"
-	sdk "github.com/arsiba/tofulint-plugin-sdk/tflint"
+	sdk "github.com/SoeldnerConsult/tofulint-plugin-sdk/tflint"
 )
 
 // Issue represents a problem in configurations

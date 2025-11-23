@@ -300,7 +300,7 @@ func Test_Discovery_bundledPluginWithVersion(t *testing.T) {
 			"opentofu": {
 				Name:    "opentofu",
 				Enabled: true,
-				Source:  "github.com/SoeldnerConsulterConsult/tofulint-ruleset-opentofu",
+				Source:  "github.com/SoeldnerConsult/tofulint-ruleset-opentofu",
 				Version: "0.0.7",
 			},
 		},

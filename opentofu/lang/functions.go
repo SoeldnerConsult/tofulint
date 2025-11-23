@@ -11,8 +11,8 @@ import (
 	"github.com/zclconf/go-cty/cty/function/stdlib"
 
 	"github.com/SoeldnerConsult/tofulint/opentofu/collections"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang/funcs"
-	"github.com/SoeldnerConsulterConsult/tofulint/opentofu/lang/funcs/terraform"
+	"github.com/SoeldnerConsult/tofulint/opentofu/lang/funcs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/lang/funcs/terraform"
 )
 
 var impureFunctions = []string{

@@ -4,7 +4,7 @@
 package tfhcl
 
 import (
-	"github.com/arsiba/tofulint-plugin-sdk/hclext"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/hclext"
 	"github.com/hashicorp/hcl/v2"
 )
 

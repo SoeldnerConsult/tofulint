@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/arsiba/tofulint/formatter"
+	"github.com/SoeldnerConsult/tofulint/formatter"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 )

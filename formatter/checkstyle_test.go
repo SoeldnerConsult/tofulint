@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	hcl "github.com/hashicorp/hcl/v2"
 )
 

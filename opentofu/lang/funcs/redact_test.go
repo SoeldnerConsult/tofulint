@@ -8,7 +8,7 @@ package funcs
 import (
 	"testing"
 
-	"github.com/arsiba/tofulint-plugin-sdk/terraform/lang/marks"
+	"github.com/SoeldnerConsult/tofulint-plugin-sdk/terraform/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 

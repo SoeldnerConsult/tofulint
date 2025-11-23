@@ -14,8 +14,8 @@ import (
 	"text/template"
 
 	"github.com/SoeldnerConsult/tofulint/cmd"
-	"github.com/SoeldnerConsulterConsult/tofulint/formatter"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/formatter"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/google/go-cmp/cmp"
 )
 

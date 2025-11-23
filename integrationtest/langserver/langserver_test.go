@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/SoeldnerConsult/tofulint/langserver"
-	"github.com/SoeldnerConsulterConsult/tofulint/plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/plugin"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	"github.com/hashicorp/logutils"
 	lsp "github.com/sourcegraph/go-lsp"
 	"github.com/sourcegraph/jsonrpc2"

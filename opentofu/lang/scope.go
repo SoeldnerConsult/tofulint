@@ -10,7 +10,7 @@ import (
 
 	"github.com/zclconf/go-cty/cty/function"
 
-	"github.com/arsiba/tofulint/opentofu/addrs"
+	"github.com/SoeldnerConsult/tofulint/opentofu/addrs"
 )
 
 // Scope is the main type in this package, allowing dynamic evaluation of

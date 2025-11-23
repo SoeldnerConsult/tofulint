@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/SoeldnerConsult/tofulint-plugin-sdk/plugin/host2plugin"
-	"github.com/SoeldnerConsulterConsult/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 	plugin "github.com/hashicorp/go-plugin"
 	"github.com/mitchellh/go-homedir"
 )

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/arsiba/tofulint/tflint"
+	"github.com/SoeldnerConsult/tofulint/tflint"
 )
 
 func Test_GetSigningKey(t *testing.T) {
