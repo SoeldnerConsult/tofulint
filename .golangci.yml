@@ -15,4 +15,4 @@ linters:
       - path: 'opentofu/.*'
         linters:
           - gosimple
-
+        text: 'ST1005:'
