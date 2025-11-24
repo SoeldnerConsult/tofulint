@@ -1,67 +1,77 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
-REPO="SoeldnerConsult/tofulint"
+set -eo pipefail
 
-echo "===================================================="
-echo "Fetching release version ..."
 
-get_latest_release() {
-  headers=()
-  if [ -n "${GITHUB_TOKEN:-}" ]; then
-      headers=(-H "Authorization: Bearer ${GITHUB_TOKEN}")
-  fi
-  curl --fail -sS "${headers[@]}" "https://api.github.com/repos/${REPO}/releases/latest" \
-    | grep '"tag_name":' \
-    | sed -E 's/.*"([^"]+)".*/\1/'
+detect_arch() {
+    case "$(uname -m)" in
+        i386|i686) echo "386" ;;
+        x86_64)    echo "amd64" ;;
+        arm64|aarch64) echo "arm64" ;;
+        *) echo "unknown" ;;
+    esac
 }
 
-if [ -z "${TOFULINT_VERSION:-}" ] || [ "${TOFULINT_VERSION}" = "latest" ]; then
-  echo "Determining latest version ..."
-  version=$(get_latest_release)
+ARCH=$(detect_arch)
+echo "Detected architecture: $ARCH"
+
+
+detect_os() {
+    case "$(uname -s)" in
+        Darwin*)  echo "darwin_${ARCH}" ;;
+        MINGW64*|MSYS_NT*) echo "windows_${ARCH}" ;;
+        *) echo "linux_${ARCH}" ;;
+    esac
+}
+
+OS_TARGET=$(detect_os)
+echo "Detected OS target: $OS_TARGET"
+
+echo -e "\n====================================================\n"
+
+
+TMP_DIR=$(mktemp -d -t tofulint.XXXXXXXX)
+ZIP_FILE="$TMP_DIR/tofulint.zip"
+EXECUTABLE="$TMP_DIR/tofulint"
+
+
+if [ -z "$TFLINT_VERSION" ] || [ "$TFLINT_VERSION" = "latest" ]; then
+    echo "Fetching latest TofuLint..."
+    DOWNLOAD_URL="https://github.com/SoeldnerConsult/tofulint/releases/latest/download/tofulint_${OS_TARGET}.zip"
 else
-  version=${TOFULINT_VERSION}
+    echo "Fetching TofuLint version $TFLINT_VERSION..."
+    DOWNLOAD_URL="https://github.com/SoeldnerConsult/tofulint/releases/download/${TFLINT_VERSION}/tofulint_${OS_TARGET}.zip"
 fi
 
-echo "Version: $version"
+curl -sSL -o "$ZIP_FILE" "$DOWNLOAD_URL" || { echo "Download failed"; exit 1; }
+echo "Download completed."
 
-BINARY_NAME="tofulint-${version}"
+echo -e "\nUnpacking $ZIP_FILE..."
+unzip -o "$ZIP_FILE" -d "$TMP_DIR"
 
-echo "===================================================="
-echo "Downloading ${BINARY_NAME} ..."
 
-download_path=$(mktemp -d -t tofulint.XXXXXXXXXX)
-download_executable="${download_path}/tofulint"
-
-curl --fail -sSL -o "${download_executable}" \
-  "https://github.com/${REPO}/releases/download/${version}/${BINARY_NAME}" || {
-    echo "Download failed. Check if ${BINARY_NAME} exists for release ${version}."
-    exit 1
-  }
-
-chmod +x "${download_executable}"
-
-echo "===================================================="
-echo "Installing ${BINARY_NAME} ..."
-
-dest="${TOFULINT_INSTALL_PATH:-/usr/local/bin}"
-
-if [[ -w "$dest" ]]; then
-  SUDO=""
+if [[ "$OS_TARGET" == windows* ]]; then
+    DEST_DIR="${TFLINT_INSTALL_PATH:-/bin}"
 else
-  SUDO="sudo"
+    DEST_DIR="${TFLINT_INSTALL_PATH:-/usr/local/bin}"
 fi
 
-$SUDO mkdir -p "$dest"
-$SUDO install -c -v "${download_executable}" "$dest/tofulint"
+echo "Installing TofuLint to $DEST_DIR ..."
 
-echo "===================================================="
-echo "Cleaning up ..."
-rm -rf "${download_path}"
 
-echo "===================================================="
-echo "tofulint has been installed to ${dest}"
-"${dest}/tofulint" -v || echo "Version could not be displayed"
+if [[ ! -w "$DEST_DIR" && "$OS_TARGET" != windows* ]]; then
+    SUDO="sudo"
+else
+    SUDO=""
+fi
 
-echo "===================================================="
-echo "Start by calling 'tofulint' in your terminal"
+$SUDO mkdir -p "$DEST_DIR"
+$SUDO install -m 0755 "$EXECUTABLE" "$DEST_DIR" || { echo "Installation failed"; exit 1; }
+
+
+echo "Cleaning up temporary files..."
+rm -rf "$TMP_DIR"
+
+echo -e "\n====================================================\n"
+echo "Installed Tofulint version:"
+"$DEST_DIR/tofulint" -v
