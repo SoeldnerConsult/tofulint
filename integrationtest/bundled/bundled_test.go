@@ -69,6 +69,11 @@ func TestIntegration(t *testing.T) {
 				t.Fatal(err)
 			}
 
+			initCmd := exec.Command("tofulint", "--init")
+			if out, err := initCmd.CombinedOutput(); err != nil {
+				t.Fatalf("tofulint --init failed: %s\nOutput:\n%s", err, string(out))
+			}
+
 			args := strings.Split(test.command, " ")
 			var cmd *exec.Cmd
 			if runtime.GOOS == "windows" {

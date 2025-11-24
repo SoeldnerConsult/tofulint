@@ -1,13 +1,18 @@
+version: "2"
+
 run:
   timeout: 5m
-  skip-dirs:
-    - opentofu/
-linters:
+
+
+formatters:
   enable:
     - gci
     - gofmt
-issues:
-  exclude-rules:
-    - path: opentofu/
-      linters:
-        - gosimple
+
+linters:
+  exclusions:
+    rules:
+      - path: 'opentofu/.*'
+        linters:
+          - gosimple
+        text: 'ST1005:'
