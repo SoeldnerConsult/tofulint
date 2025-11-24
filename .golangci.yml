@@ -1,15 +1,19 @@
-version: 2
+version: "2"
 
 run:
   timeout: 5m
+
+path:
   skip-dirs:
     - opentofu/
+
 linters:
   enable:
     - gci
     - gofmt
+
 issues:
-  exclude-rules:
+  exclude:
     - path: opentofu/
       linters:
         - gosimple
