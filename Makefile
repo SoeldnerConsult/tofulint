@@ -28,7 +28,4 @@ clean:
 generate:
 	go generate ./...
 
-release:
-	go run ./tools/release/main.go
-
 .PHONY: prepare test build install e2e lint clean generate
