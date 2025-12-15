@@ -68,9 +68,6 @@ Currently, only one installation method is available:
 curl -s https://raw.githubusercontent.com/SoeldnerConsult/tofulint/master/install_linux.sh | bash
 ````
 
-### Verification
-At this stage, no releases are verified or signed.
-
 ### Docker
 A Docker-based installation will be available in a future release.
 
