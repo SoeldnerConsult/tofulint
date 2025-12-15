@@ -12,6 +12,46 @@ A **pluggable** [OpenTofu](https://opentofu.org/) linter inspired by TFLint.
 `TofuLint` is an **experimental** fork of `TFLint` that replaces Terraform internals with **OpenTofu**.  
 It is **highly experimental** and **not production-ready**. Use at your own risk.
 
+## Features
+
+TofuLint is a modular framework where each feature is provided via plugins. Key features include:
+
+- Detect potential errors (e.g., invalid instance types) for major cloud providers: AWS, Azure, GCP.  
+- Warn about deprecated syntax and unused declarations.  
+- Enforce best practices and naming conventions.  
+
+## Pipeline Integration
+
+For two distinct examples of integrating `tofulint` into a CI/CD workflow - one that **fails the pipeline** on errors and one that **always succeeds** but **reports issues** to the GitHub Security Status page - please check out the dedicated **[demo repository](https://github.com/SoeldnerConsult/tofulint-test-repo)**.
+
+## Installation
+Currently, only one installation method is available:
+
+### Bash (Linux)
+```bash
+curl -s https://raw.githubusercontent.com/SoeldnerConsult/tofulint/master/install_linux.sh | bash
+````
+
+### Docker
+A Docker-based installation will be available in a future release.
+
+## Getting Started
+TofuLint comes bundled with a [Terraform language ruleset](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu), enabling recommended rules by default.
+
+### Enabling the Opentofu Plugin
+Declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl`:
+
+```hcl
+plugin "opentofu" {
+  enabled = true
+  version = "0.0.9"
+  source = "github.com/SoeldnerConsult/tofulint-ruleset-opentofu"
+}
+```
+> Even though tofulint currently comes with the opentofu plugin pre-packaged, it is still necessary to enable th plugin manually with the given plugin source. This is due to a bug in tofulint source code.
+
+More details: [TFLint Terraform Ruleset Configuration](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu/blob/main/docs/configuration.md)
+
 
 ## Known Issues
 
@@ -51,42 +91,6 @@ plugin "opentofu" {
 }
 ```
 
-
-## Features
-
-TofuLint is a modular framework where each feature is provided via plugins. Key features include:
-
-- Detect potential errors (e.g., invalid instance types) for major cloud providers: AWS, Azure, GCP.  
-- Warn about deprecated syntax and unused declarations.  
-- Enforce best practices and naming conventions.  
-
-## Installation
-Currently, only one installation method is available:
-
-### Bash (Linux)
-```bash
-curl -s https://raw.githubusercontent.com/SoeldnerConsult/tofulint/master/install_linux.sh | bash
-````
-
-### Docker
-A Docker-based installation will be available in a future release.
-
-## Getting Started
-TofuLint comes bundled with a [Terraform language ruleset](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu), enabling recommended rules by default.
-
-### Enabling the Opentofu Plugin
-Declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl`:
-
-```hcl
-plugin "opentofu" {
-  enabled = true
-  version = "0.0.9"
-  source = "github.com/SoeldnerConsult/tofulint-ruleset-opentofu"
-}
-```
-> Even though tofulint currently comes with the opentofu plugin pre-packaged, it is still necessary to enable th plugin manually with the given plugin source. This is due to a bug in tofulint source code.
-
-More details: [TFLint Terraform Ruleset Configuration](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu/blob/main/docs/configuration.md)
 
 ### Cloud Provider Plugins
 
