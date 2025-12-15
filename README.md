@@ -20,6 +20,21 @@ TofuLint is a modular framework where each feature is provided via plugins. Key 
 - Warn about deprecated syntax and unused declarations.  
 - Enforce best practices and naming conventions.  
 
+### TofuLint specific features
+In comparison to [TFLint](https://github.com/terraform-linters/tflint/) TofuLint introduces some enhancements. 
+Most of the enhancements evolve around opentofu specific filetypes.
+- support for `.tf` as well as `.tofu` files
+- support for `.tflint.hcl` as well as `tofulint.hcl` module config files.
+- support for the equivalent `.json` files
+- the whole terraform fork in the core of tflint was replaced by an fork of opentofu.
+
+While this fork now is up to date with the basic tflint functionality, some more opentofu specific features can be introduced:
+- **features evolving around state-encryption are not supported yet**: Linting for the `encryption` block in `terraform` configurations, including validation of `key_provider` consistency, method syntax (e.g. AES-GCM), and policy enforcement for prod environments.
+- **linting for dynamic provider-defined functions**: Static analysis of provider-defined function calls, checking argument types/signatures against provider schemas and detecting usage of unknown values where only constants are allowed.
+- **linting for removed blocks**: Validation of `removed` blocks for consistency with resource/module definitions, warnings on non-matching or obsolete removals, and policy rules to prevent accidental deprovisioning in shared modules.
+- **linting for loopable import blocks**: Checks on `for_each`/`count` expressions in `import` blocks for valid mappings against data sources, resource ID format compatibility, and avoidance of duplicate imports with manual state entries.
+
+
 ## Pipeline Integration
 
 For two distinct examples of integrating `tofulint` into a CI/CD workflow - one that **fails the pipeline** on errors and one that **always succeeds** but **reports issues** to the GitHub Security Status page - please check out the dedicated **[demo repository](https://github.com/SoeldnerConsult/tofulint-test-repo)**.
@@ -178,6 +193,9 @@ Application Options:
 Help Options:
   -h, --help                             Show this help message
 ```
+
+## 
+
 
 See [User Guide](docs/user-guide) for more details.
 
