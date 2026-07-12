@@ -54,7 +54,9 @@ A Docker-based installation will be available in a future release.
 TofuLint comes bundled with a [Terraform language ruleset](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu), enabling recommended rules by default.
 
 ### Enabling the Opentofu Plugin
-Declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl`:
+The bundled `opentofu` ruleset is enabled automatically — no configuration is required to get started.
+
+If you want to pin a specific release of the ruleset instead of using the bundled one, declare the plugin block in your `.tflint.hcl` or `.tofulint.hcl` and run `tofulint --init`:
 
 ```hcl
 plugin "opentofu" {
@@ -63,48 +65,8 @@ plugin "opentofu" {
   source = "github.com/SoeldnerConsult/tofulint-ruleset-opentofu"
 }
 ```
-> Even though tofulint currently comes with the opentofu plugin pre-packaged, it is still necessary to enable th plugin manually with the given plugin source. This is due to a bug in tofulint source code.
 
 More details: [TFLint Terraform Ruleset Configuration](https://github.com/SoeldnerConsult/tofulint-ruleset-opentofu/blob/main/docs/configuration.md)
-
-
-## Known Issues
-
-### Broken Pre-bundled Installation
-
-**Status:** Investigation Ongoing
-
-**Description**  
-Currently, the automatic installation of the `tofulint-ruleset-opentofu` plugin fails during the standard `tofulint` setup. While this ruleset is intended to be pre-bundled, the application currently fails to initialize it upon startup.
-
-**Symptoms**  
-When running `tofulint` immediately after installation, the application fails to initialize the plugin and suggests running the initialization command manually:
-
-```bash
-$ tofulint
-'Failed to initialize plugins; Plugin "opentofu" not found. Did you run "tofulint --init"?'
-```
-
-**Technical Details**  
-Attempting to resolve the issue by running `tofulint --init` reveals a malformed URL error during the fetch process. The installer appears to be constructing a GitHub API request without the necessary repository or host information:
-
-```bash
-$ tofulint --init
-Installing "opentofu" plugin...
-Failed to install a plugin; Failed to fetch GitHub releases: Get "https:///api/v3/repos///releases/tags/v0.0.7": http: no Host in request URL
-```
-
-> **Note:** The specific code responsible for generating the malformed URL (`http: no Host in request URL`) has not yet been identified.
-
-**Fix**  
-Right now the only available fix is to manually install the opentofu plugin. Therefore define an `.tflint.hcl` or `.tofulint.hcl` file and manually define the necessary opentofu plugin:
-``` hcl
-plugin "opentofu" {
-  enabled = true
-  version = "0.0.9"
-  source = "github.com/SoeldnerConsult/tofulint-ruleset-opentofu"
-}
-```
 
 
 ### Cloud Provider Plugins

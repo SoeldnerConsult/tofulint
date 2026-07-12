@@ -416,11 +416,12 @@ func (c *Config) enableBundledPlugin() *Config {
 	if _, exists := c.Plugins["opentofu"]; !exists {
 		log.Print(`[INFO] The "opentofu" plugin block is not found. Enable the plugin "opentofu" automatically`)
 
+		// Version and Source are intentionally left empty: ManuallyInstalled()
+		// must return true so that discovery falls back to the bundled plugin
+		// and "tofulint --init" does not try to download it from GitHub.
 		c.Plugins["opentofu"] = &PluginConfig{
 			Name:    "opentofu",
 			Enabled: true,
-			Version: "0.0.7",
-			Source:  "github.com/SoeldnerConsult/tofulint-ruleset-opentofu",
 			Body:    f.Body,
 		}
 
